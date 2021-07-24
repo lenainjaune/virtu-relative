@@ -1,4 +1,5 @@
 # virtu-relative
+Remarque : ce qui suit est aussi vrai pour les hôtes physiques, mais comme je contruis plus de VMs, j'ai choisi de consigner mes notes ici.
 ## Linux VM
 L'expérience a montré que certains paquets sont incontournables :
 ```sh
