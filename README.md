@@ -6,6 +6,7 @@ voir aussi : https://github.com/lenainjaune/libvirt
 ## Linux VM
 L'expérience a montré que certains paquets sont incontournables :
 ```sh
+# TODO : ajouter numlockx (pour verrouiller numpad AVANT login) ?
 root@host:~# apt install -y vim htop locate less aptitude wget gawk man sshfs rsync tree curl net-tools gnupg2
 ```
 Pour compiler :
