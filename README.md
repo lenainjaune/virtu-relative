@@ -7,11 +7,11 @@ voir aussi : https://github.com/lenainjaune/libvirt
 L'expérience a montré que certains paquets sont incontournables :
 ```sh
 # TODO : ajouter numlockx (pour verrouiller numpad AVANT login) ?
-root@host:~# apt install -y vim htop locate less aptitude wget gawk man sshfs rsync tree curl net-tools gnupg2 rfkill util-linux nmap tcpdump binutils git
+root@host:~# apt install -y vim htop locate less aptitude wget gawk man sshfs rsync tree curl net-tools gnupg2 rfkill util-linux nmap tcpdump binutils
 ```
 Pour compiler :
 ```sh
-root@host:~# apt install -y build-essential
+root@host:~# apt install -y build-essential gcc make gettext git
 ```
 voir aussi les paquets de qui permettent la résolution par nom [ici](https://github.com/lenainjaune/network_howto#acc%C3%A9s-r%C3%A9seau-par-nom)
 
