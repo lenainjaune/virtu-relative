@@ -7,7 +7,7 @@ voir aussi : https://github.com/lenainjaune/libvirt
 L'expérience a montré que certains paquets sont incontournables :
 ```sh
 # TODO : ajouter numlockx (pour verrouiller numpad AVANT login) ?
-root@host:~# apt install -y vim htop locate less aptitude wget gawk man sshfs rsync tree curl net-tools gnupg2 rfkill util-linux nmap tcpdump binutils  screen pv
+root@host:~# apt install -y vim htop locate less aptitude wget gawk man sshfs rsync tree curl net-tools gnupg2 rfkill util-linux nmap tcpdump binutils screen pv
 ```
 Pour compiler :
 ```sh
@@ -91,4 +91,18 @@ pc-q35-X.Y           Standard PC (Q35 + ICH9, 2009)
 isapc                ISA-only PC
 none                 empty machine
 xenpv                Xen Para-virtualized PC
+```
+# Windows VM
+## Windows XP
+Quand on active le Bureau à distance, j'ai constaté que parfois on ne peut pas se connecter tout de suite après le reboot. C'est juste que des fois il met plus de temps.
+
+Apparemment le service concerné n'est pas **TermService** (démarré et en manuel par défaut) mais je n'en suis pas sûr.
+
+TODO : trouver le service ou le programme concerné
+
+J'ai également cherché une solution pour faire en sorte qu'un service soit exécuté en 1er mais je n'ai pas trouvé (recherche : "windows xp" make a service run first).
+
+Service en démarrage auto par CLI ([source](https://www.windows-commandline.com/start-terminal-services-command-line/)) :
+```bash
+sc config TermService start= auto
 ```
