@@ -92,6 +92,11 @@ isapc                ISA-only PC
 none                 empty machine
 xenpv                Xen Para-virtualized PC
 ```
+# Réduire automatiquement la taille d'un disque QCOW2
+[source](https://tuxfixer.com/how-to-shrink-openstack-qcow2-image-with-qemu-img/)
+```sh
+root@host:~# qemu-img convert -O qcow2 vm-bullseye.qcow2 vm-bullseye_shrinked.qcow2
+```
 # Windows VM
 ## Windows XP
 Quand on active le Bureau à distance, j'ai constaté que parfois on ne peut pas se connecter tout de suite après le reboot. C'est juste que des fois il met plus de temps.
